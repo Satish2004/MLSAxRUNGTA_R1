@@ -1,0 +1,32 @@
+// steps that i had considered....
+
+// Step 1  use --> tailwind
+// components-->>
+   navbar 
+   landing page
+   mark key
+   about
+   card 6 -> tech team logical and palnning and event management video editor 
+   cards--> past Events
+
+   get ready our upcoming events so join MLSA team
+      footer--> about our team and MLSA and social links of our community
+      
+
+
+//step2 --> for doing the motion we take npm i framer-motion
+
+//eyes -->
+we use aton2(delta x , delta y)-> redians--> conert into deg.
+1 redians value = 57.2958 soemthing
+but there is trick to find  in console -> 180/Math.PI --> 1 red ko deg
+
+2 rad => 180/Math.PI == in degree.  to iskke liye useEffect use hoga screen pura khulega then usko use krenge taki wo hame x axis or y axis ki delta dede jise aton2 me daale
+ek hota hai aton but sometime it gives error
+
+
+isme hame find krna hi center of screen wo bhi x axis aur y axis dono me
+aur isnko jo bhi move kar rahe hi unse jo x aur y axis aa rhi hai usse minus kr dnge aur save deltaX and deltaY me save kara denge
+
+scroll.locomotive.ca
+easing.net
