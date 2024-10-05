@@ -17,10 +17,6 @@ HTML & CSS: For the structure and layout of the webpage.
 Installation
 To get started, clone this repository and install the necessary dependencies.
 
-bash
-Copy code
-# Clone the repository
-git clone https://github.com/Satish2004/MLSA_RUNGTA.git
 
 # Navigate to the project directory
 cd MLSA_RUNGTA
