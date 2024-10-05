@@ -4,9 +4,15 @@ import React from "react";
 
 const Event = () => {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-.1" className="w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#1F3B61] " id="upcomingevent">
+    <div
+      data-scroll
+      data-scroll-section
+      data-scroll-speed="-.1"
+      className="w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#1F3B61] "
+      id="upcomingevent"
+    >
       {/* Text Animation Section */}
-      <div className="text border-t-2 border-b-2 border-zinc-400 flex  overflow-hidden whitespace-nowrap pr-10 ">
+      <div className="text border-t-2 border-b-2 border-zinc-400 flex overflow-hidden whitespace-nowrap pr-10">
         <motion.h1
           initial={{ x: "0" }}
           animate={{ x: "-100%" }}
@@ -17,11 +23,15 @@ const Event = () => {
         </motion.h1>
       </div>
 
-{/* Upcoming Events */}
-
+      {/* Upcoming Events */}
 
       {/* Card Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5">
+      <motion.div
+        initial={{ y: "-100%", opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: [0.76, 0, 0.24, 1], duration: 4 }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 px-5"
+      >
         {/* Card 1 */}
         <div className="rounded-lg shadow-lg overflow-hidden">
           <div className="h-40 overflow-hidden">
@@ -32,7 +42,9 @@ const Event = () => {
             />
           </div>
           <div className="p-5">
-            <h2 className="text-xl font-semibold mb-2">Tech Conference 2024</h2>
+            <h2 className="text-lg md:text-xl font-semibold mb-2">
+              Tech Conference 2024
+            </h2>
             <p className="text-gray-300">
               Join industry experts and learn about the latest trends in
               technology.
@@ -56,7 +68,9 @@ const Event = () => {
             />
           </div>
           <div className="p-5">
-            <h2 className="text-xl font-semibold mb-2">Hackathon 2024</h2>
+            <h2 className="text-lg md:text-xl font-semibold mb-2">
+              Hackathon 2024
+            </h2>
             <p className="text-gray-300">
               Show your coding skills in our upcoming hackathon event.
             </p>
@@ -79,7 +93,7 @@ const Event = () => {
             />
           </div>
           <div className="p-5">
-            <h2 className="text-xl font-semibold mb-2">
+            <h2 className="text-lg md:text-xl font-semibold mb-2">
               Web Development Workshop
             </h2>
             <p className="text-gray-300">
@@ -104,7 +118,9 @@ const Event = () => {
             />
           </div>
           <div className="p-5">
-            <h2 className="text-xl font-semibold mb-2">AI & ML Seminar</h2>
+            <h2 className="text-lg md:text-xl font-semibold mb-2">
+              AI & ML Seminar
+            </h2>
             <p className="text-gray-300">
               Explore the advancements in Artificial Intelligence and Machine
               Learning.
@@ -128,7 +144,9 @@ const Event = () => {
             />
           </div>
           <div className="p-5">
-            <h2 className="text-xl font-semibold mb-2">Blockchain Bootcamp</h2>
+            <h2 className="text-lg md:text-xl font-semibold mb-2">
+              Blockchain Bootcamp
+            </h2>
             <p className="text-gray-300">
               Learn the fundamentals of blockchain technology.
             </p>
@@ -151,7 +169,7 @@ const Event = () => {
             />
           </div>
           <div className="p-5">
-            <h2 className="text-xl font-semibold mb-2">
+            <h2 className="text-lg md:text-xl font-semibold mb-2">
               Cybersecurity Awareness
             </h2>
             <p className="text-gray-300">
@@ -167,7 +185,7 @@ const Event = () => {
         </div>
 
         {/* Add more events if needed */}
-      </div>
+      </motion.div>
     </div>
   );
 };

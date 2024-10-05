@@ -1,26 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { gsap, CSSPlugin, Expo } from "gsap";
-import OverAllSection from "./components/OverAllSection"; // Ensure the path is correct
+import React, { useEffect, useState } from "react";
+import gsap, { Expo } from "gsap";
+import OverAllSection from "../components/OverAllSection";
+import "./loader.css"; 
 
-gsap.registerPlugin(CSSPlugin);
-
-function App() {
+const Loader = () => {
   const [counter, setCounter] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const count = setInterval(() => {
       setCounter((prevCounter) => {
-        if (prevCounter < 100) {
-          return prevCounter + 1;
-        } else {
+        if (prevCounter >= 100) {
           clearInterval(count);
-          setIsLoading(false); // Stop loading
-          reveal(); // Trigger the reveal animation
-          return 100; // Ensure the counter doesn't exceed 100
+          setIsLoading(false);
+          reveal(); 
+          return 100; 
         }
+        return prevCounter + 1; 
       });
-    }, 25);
+    }, 25); 
   }, []);
 
   const reveal = () => {
@@ -50,27 +48,30 @@ function App() {
         stagger: 0.15,
         ease: Expo.easeInOut,
         duration: 0.6,
+      })
+      .to(".container", {
+        scale: 1,
+        opacity: 1,
+        duration: 1,
+        ease: Expo.easeOut,
       });
   };
 
   return (
-    <>
+    <div className="loader">
       {isLoading ? (
-        <div className="loader h-screen w-screen bg-gray-600 flex justify-center items-center">
-          <h1 className="counter text-9xl text-gray-400 fixed z-50">{counter}</h1>
-          <div className="absolute inset-0 flex space-x-2">
-            {Array(10)
-              .fill(0)
-              .map((_, index) => (
-                <div key={index} className="bar bg-black w-[10vw] h-screen"></div>
-              ))}
-          </div>
-        </div>
+        <>
+          <h1 className="counter">
+            {counter}%
+          </h1>
+        </>
       ) : (
-        <OverAllSection /> // Render your main content after loading
+        <div className="container">
+          <OverAllSection />
+        </div>
       )}
-    </>
+    </div>
   );
-}
+};
 
-export default App;
+export default Loader;

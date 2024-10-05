@@ -1,0 +1,23 @@
+.loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.counter {
+  font-size: 9rem;
+  color: gray;
+  position: fixed;
+  z-index: 50;
+}
+
+.container {
+  opacity: 0;
+  scale: 0.5;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 10;
+}
