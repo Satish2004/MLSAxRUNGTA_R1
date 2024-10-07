@@ -42,12 +42,13 @@ const Resources = () => {
       <div
         data-scroll
         data-scroll-speed="-.7"
-        className="absolute inset-0 bg-cover bg-center bg-yellow-400 rounded-tl-3xl rounded-tr-3xl flex items-center justify-center "
+        className="absolute inset-0 bg-cover bg-center bg-[#FFB900] rounded-tl-3xl rounded-tr-3xl flex items-center justify-center "
       >
         <h1 className="leading-tight text-[5rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] whitespace-normal text-white font-bold w-full h-50 bg-cover bg-center text-center rounded-lg p-10 sm:p-16 lg:p-20 containerBackground">
-  <span className="uppercase recourcesText">Are you looking for resources?</span>
-</h1>
-
+          <span className="uppercase recourcesText">
+            Are you looking for resources?
+          </span>
+        </h1>
       </div>
 
       {/* Eyes Section */}
@@ -98,12 +99,12 @@ const Resources = () => {
       </div>
 
       <div className="absolute bottom-10 flex  m-10">
-      <a href="#">
-  <button className="uppercase flex gap-7 px-10 py-6 bg-zinc-900 rounded-tl-full rounded-tr-full items-center text-white text-center hover:bg-gray-800 transition-all duration-300">
-    Resources
-    <div className="w-2 h-2 bg-zinc-50 rounded-full"></div>
-  </button>
-</a>
+        <a href="https://mvp.microsoft.com/en-US/studentambassadors/milestones">
+          <button className="uppercase flex gap-7 px-10 py-6 bg-zinc-900 rounded-tl-full rounded-tr-full items-center text-white text-center hover:bg-gray-800 transition-all duration-300">
+            Resources
+            <div className="w-2 h-2 bg-zinc-50 rounded-full"></div>
+          </button>
+        </a>
       </div>
     </div>
   );

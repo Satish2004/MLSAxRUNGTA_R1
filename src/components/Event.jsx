@@ -8,7 +8,7 @@ const Event = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.1"
-      className="w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#1F3B61] "
+      className="w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#24906a] "
       id="upcomingevent"
     >
       {/* Text Animation Section */}
@@ -184,7 +184,7 @@ const Event = () => {
           </div>
         </div>
 
-        {/* Add more events if needed */}
+        Add more events if needed
       </motion.div>
     </div>
   );

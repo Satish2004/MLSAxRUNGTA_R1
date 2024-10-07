@@ -8,17 +8,18 @@ const LandingPage = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.7"
-      className="w-full h-screen bg-[#0078D3] pt-1"
+      className="w-full h-screen bg-black pt-1"
       id="home"
     >
-      <div className="textStructure mt-24 sm:mt-32 md:mt-40 lg:mt-52">
-        <div className="w-fit items-center">
-          <div className="masker">
+      <div className="w-full h-full flex flex-col justify-center items-center text-center mt-0">
+        <div className="w-full flex flex-col items-center">
+          {/* Text Animation */}
+          <div className="masker mt-20">
             <motion.h1
               initial={{ x: "-100%" }}
               animate={{ x: 0 }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-              className="px-5 sm:px-10 md:px-16 lg:px-20 uppercase leading-[12vw] sm:leading-[10vw] md:leading-[8vw] lg:leading-[6.5vw] tracking-tighter font-medium text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-9xl font-['Founders_Grotesk']"
+              className="uppercase leading-[12vw] sm:leading-[10vw] md:leading-[8vw] lg:leading-[6.5vw] tracking-tighter font-medium text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-9xl font-['Founders_Grotesk']"
             >
               Are you{" "}
             </motion.h1>
@@ -29,7 +30,7 @@ const LandingPage = () => {
               initial={{ x: "7%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 3 }}
-              className="px-5 sm:px-10 md:px-16 lg:px-20 uppercase leading-[12vw] sm:leading-[10vw] md:leading-[8vw] lg:leading-[6.5vw] tracking-tighter font-medium text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-9xl font-['Founders_Grotesk']"
+              className="uppercase leading-[12vw] sm:leading-[10vw] md:leading-[8vw] lg:leading-[6.5vw] tracking-tighter font-medium text-[12vw] sm:text-[10vw] md:text-[9vw] lg:text-9xl font-['Founders_Grotesk']"
             >
               Excited to{" "}
             </motion.h1>
@@ -37,22 +38,40 @@ const LandingPage = () => {
 
           <div className="masker">
             <motion.h1
-              initial={{ x: "-100%" }}
-              animate={{ x: 0 }}
+              initial={{ x: "-100%" , opacity:0}}
+              animate={{ x: 0 , opacity:1}}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 4 }}
-              className="px-5 sm:px-10 md:px-16 lg:px-20 uppercase leading-[12vw] sm:leading-[10vw] md:leading-[8vw] lg:leading-[6.5vw] tracking-tighter font-medium text-[10vw] sm:text-[9vw] md:text-[8vw] lg:text-[7.5vw] font-['Founders_Grotesk']"
+              className="uppercase leading-[12vw] sm:leading-[10vw] md:leading-[8vw] lg:leading-[6.5vw] tracking-tighter font-medium text-[10vw] sm:text-[9vw] md:text-[8vw] lg:text-[7.5vw] font-['Founders_Grotesk']"
             >
               join?
             </motion.h1>
           </div>
         </div>
 
+        {/* Avatar and Link */}
+        <motion.div
+          initial={{ y: "-100%" }}
+          animate={{ y: 0 }}
+          transition={{ ease: [0.76, 0, 0.24, 1], duration: 4 }}
+          className="container "
+        >
+          <div className="avatar bg-[#0876D2]">
+            <a href="https://chat.whatsapp.com/FlBnnFbKaWz8wnGhP9Exye">
+              <img
+                src="public/Microsoft-Logo.wine copy.png"
+                alt="MLSA_LOGO"
+                className="w-16 h-16 "
+              />
+            </a>
+          </div>
+        </motion.div>
+
         {/* Horizontal line section */}
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ y: "-300%", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 2 }}
-          className="border-t-[1px] border-zinc-800 mt-8 sm:mt-10 lg:mt-12 flex items-center justify-between py-4 px-5 sm:px-10 md:px-16 lg:px-20"
+          className="border-t-[1px] border-zinc-800 mt-8 sm:mt-10 lg:mt-12 flex items-center justify-between py-4 px-5 sm:px-10 md:px-16 lg:px-20 w-full"
         >
           <motion.p
             initial={{ y: "-500%" }}

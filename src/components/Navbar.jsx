@@ -9,15 +9,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed z-[999] w-full px-6 lg:px-20 py-4 lg:py-8 flex justify-between items-center font-['Neue Montreal'] bg-white/5 rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[0.1px]">
+    <div className="fixed z-[999] w-full h-12 px-6 lg:px-20 py-4 lg:py-8 flex justify-between items-center font-['Neue Montreal'] bg-white/5 rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur-[0.1px]">
       {/* Logo Section */}
       <motion.div
         initial={{ y: "-400%", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
-        className="logo text-xl lg:text-2xl font-bold"
+        className="logo text-xl lg:text-2xl font-bold flex items-center  whitespace-nowrap"
       >
-        MLSA - RUNGTA
+       <img src="public/Microsoft-Logo.wine copy.png" className=" h-20 " alt="" /><span className="sm:w-11">RUNGTA</span>
       </motion.div>
 
       {/* Toggle Button (Visible on mobile) */}
