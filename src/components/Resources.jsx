@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const Resources = () => {
   const [rotate, setRotate] = useState(0);
   const [backDotRotate, setBackDotRotate] = useState(0);
@@ -99,12 +99,21 @@ const Resources = () => {
       </div>
 
       <div className="absolute bottom-10 flex  m-10">
+<<<<<<< HEAD
         <a href="https://mvp.microsoft.com/en-US/studentambassadors/milestones">
           <button className="uppercase flex gap-7 px-10 py-6 bg-zinc-900 rounded-tl-full rounded-tr-full items-center text-white text-center hover:bg-gray-800 transition-all duration-300">
             Resources
             <div className="w-2 h-2 bg-zinc-50 rounded-full"></div>
           </button>
         </a>
+=======
+      <a href= ''>
+  <button className="uppercase flex gap-7 px-10 py-6 bg-zinc-900 rounded-tl-full rounded-tr-full items-center text-white text-center hover:bg-gray-800 transition-all duration-300">
+    Resources
+    <div className="w-2 h-2 bg-zinc-50 rounded-full"></div>
+  </button>
+</a>
+>>>>>>> 783eedbe76c014a5c0a70fde2c61d296c96b42b6
       </div>
     </div>
   );
