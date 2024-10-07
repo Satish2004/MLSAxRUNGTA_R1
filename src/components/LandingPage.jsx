@@ -38,8 +38,8 @@ const LandingPage = () => {
 
           <div className="masker">
             <motion.h1
-              initial={{ x: "-100%" , opacity:0}}
-              animate={{ x: 0 , opacity:1}}
+              initial={{ x: "-100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
               transition={{ ease: [0.76, 0, 0.24, 1], duration: 4 }}
               className="uppercase leading-[12vw] sm:leading-[10vw] md:leading-[8vw] lg:leading-[6.5vw] tracking-tighter font-medium text-[10vw] sm:text-[9vw] md:text-[8vw] lg:text-[7.5vw] font-['Founders_Grotesk']"
             >
@@ -58,7 +58,7 @@ const LandingPage = () => {
           <div className="avatar bg-[#0876D2]">
             <a href="https://chat.whatsapp.com/FlBnnFbKaWz8wnGhP9Exye">
               <img
-                src="public/Microsoft-Logo.wine copy.png"
+                src="/Microsoft-Logo.wine copy.png"
                 alt="MLSA_LOGO"
                 className="w-16 h-16 "
               />

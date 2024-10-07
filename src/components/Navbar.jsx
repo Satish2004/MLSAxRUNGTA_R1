@@ -17,7 +17,8 @@ const Navbar = () => {
         transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
         className="logo text-xl lg:text-2xl font-bold flex items-center  whitespace-nowrap"
       >
-       <img src="public/Microsoft-Logo.wine copy.png" className=" h-20 " alt="" /><span className="sm:w-11">RUNGTA</span>
+        <img src="/Microsoft-Logo.wine copy.png" className=" h-20 " alt="" />
+        <span className="sm:w-11">RUNGTA</span>
       </motion.div>
 
       {/* Toggle Button (Visible on mobile) */}
