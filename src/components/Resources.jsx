@@ -1,32 +1,24 @@
 import React, { useEffect, useState } from "react";
-// import { useNavigate } from "react-router-dom";
 
 const Resources = () => {
   const [rotate, setRotate] = useState(0);
   const [backDotRotate, setBackDotRotate] = useState(0);
 
   useEffect(() => {
-    // Function to handle mouse movement and calculate rotation
     const handleMouseMove = (e) => {
       let mouseX = e.clientX;
       let mouseY = e.clientY;
 
-      // Find the difference between mouse position and center of the screen
       let deltaX = mouseX - window.innerWidth / 2;
       let deltaY = mouseY - window.innerHeight / 2;
 
-      // Convert radians to degrees and calculate the rotation angle
       let angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
-      setRotate(angle - 180); // Exact position
-
-      // Update backDot with a slight delay for smoother, subtle movement
-      setBackDotRotate((prev) => prev + (angle - 180 - prev) * 0.2); // Modify the speed/smoothness
+      setRotate(angle - 180);
+      setBackDotRotate((prev) => prev + (angle - 180 - prev) * 0.2);
     };
 
-    // Add event listener for mouse movement
     window.addEventListener("mousemove", handleMouseMove);
-
-    // Cleanup event listener when component unmounts
+    
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
@@ -42,8 +34,8 @@ const Resources = () => {
     >
       <div
         data-scroll
-        data-scroll-speed="-.7"
-        className="absolute inset-0 bg-cover bg-center bg-[#FFB900] rounded-tl-3xl rounded-tr-3xl flex items-center justify-center"
+        data-scroll-speed="-0.7"
+        className="absolute inset-0 bg-cover bg-center bg-[#000000] rounded-tl-3xl rounded-tr-3xl flex items-center justify-center"
       >
         <h1 className="leading-tight text-[5rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] whitespace-normal text-white font-bold w-full h-50 bg-cover bg-center text-center rounded-lg p-10 sm:p-16 lg:p-20 containerBackground">
           <span className="uppercase resourcesText">
@@ -107,13 +99,7 @@ const Resources = () => {
           </button>
         </a>
 
-        {/* Second Button - Ensure the href is set correctly */}
-        <a href="">
-          <button className="uppercase flex gap-7 px-10 py-6 bg-zinc-900 rounded-tl-full rounded-tr-full items-center text-white text-center hover:bg-gray-800 transition-all duration-300">
-            Resources
-            <div className="w-2 h-2 bg-zinc-50 rounded-full"></div>
-          </button>
-        </a>
+  
       </div>
     </div>
   );

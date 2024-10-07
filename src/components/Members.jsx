@@ -12,7 +12,7 @@ const Members = () => {
     <div
       data-scroll
       data-scroll-section
-      data-scroll-speed="-.1"
+      data-scroll-speed="-.6"
       className="w-full py-20 rounded-tl-3xl rounded-tr-3xl bg-[#06171f]"
       id="teammember"
     >
