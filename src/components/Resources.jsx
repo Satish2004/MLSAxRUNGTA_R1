@@ -18,7 +18,7 @@ const Resources = () => {
     };
 
     window.addEventListener("mousemove", handleMouseMove);
-    
+
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
@@ -26,16 +26,14 @@ const Resources = () => {
 
   return (
     <div
-      data-scroll
-      data-scroll-section
-      data-scroll-speed=".7"
       className="eyes w-full h-screen overflow-hidden flex items-center justify-center relative"
       id="resources"
     >
       <div
         data-scroll
-        data-scroll-speed="-0.7"
-        className="absolute inset-0 bg-cover bg-center bg-[#000000] rounded-tl-3xl rounded-tr-3xl flex items-center justify-center"
+        data-scroll-section
+        data-scroll-speed="-.3"
+        className="absolute inset-0 bg-cover bg-center bg-yellow-500 rounded-tl-3xl rounded-tr-3xl flex items-center justify-center"
       >
         <h1 className="leading-tight text-[5rem] sm:text-[7rem] md:text-[8rem] lg:text-[10rem] whitespace-normal text-white font-bold w-full h-50 bg-cover bg-center text-center rounded-lg p-10 sm:p-16 lg:p-20 containerBackground">
           <span className="uppercase resourcesText">
@@ -98,8 +96,6 @@ const Resources = () => {
             <div className="w-2 h-2 bg-zinc-50 rounded-full"></div>
           </button>
         </a>
-
-  
       </div>
     </div>
   );

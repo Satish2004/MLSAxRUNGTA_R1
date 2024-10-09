@@ -50,15 +50,15 @@ const LandingPage = () => {
 
         {/* Avatar and Link */}
         <motion.div
-          initial={{ y: "-100%" }}
-          animate={{ y: 0 }}
+          initial={{ y: "-20%", opacity:0 }}
+          animate={{ y: 0 , opacity:1 }}
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 4 }}
           className="container "
         >
-          <div className="avatar bg-[#0876D2]">
+          <div className="avatar bg-[#008BE2]">
             <a href="https://chat.whatsapp.com/FlBnnFbKaWz8wnGhP9Exye">
               <img
-                src="/Microsoft-Logo.wine copy.png"
+                src="public/Logo/LevelBeta (1).png"
                 alt="MLSA_LOGO"
                 className="w-16 h-16 "
               />
@@ -73,13 +73,13 @@ const LandingPage = () => {
           transition={{ ease: [0.76, 0, 0.24, 1], duration: 2 }}
           className="border-t-[1px] border-zinc-800 mt-8 sm:mt-10 lg:mt-12 flex items-center justify-between py-4 px-5 sm:px-10 md:px-16 lg:px-20 w-full"
         >
-          <motion.p
+          {/* <motion.p
             initial={{ y: "-500%" }}
             animate={{ y: 0 }}
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 3 }}
             className="text-sm sm:text-md font-light tracking-tight leading-none uppercase"
           >
-            For All Students
+         
           </motion.p>
           <motion.p
             initial={{ y: "500%" }}
@@ -87,10 +87,10 @@ const LandingPage = () => {
             transition={{ ease: [0.76, 0, 0.24, 1], duration: 3 }}
             className="text-sm sm:text-md font-light tracking-tight leading-none uppercase"
           >
-            Get Notify
-          </motion.p>
+            
+          </motion.p> */}
 
-          <a href="#">
+          <a href="https://chat.whatsapp.com/FlBnnFbKaWz8wnGhP9Exye">
             <button className="uppercase flex gap-3 sm:gap-5 lg:gap-7 px-3 py-3 sm:px-4 sm:py-4 bg-zinc-900 rounded-full items-center mt-4 sm:mt-5 text-white text-sm sm:text-md hover:bg-gray-800">
               Join our community
               <motion.span
