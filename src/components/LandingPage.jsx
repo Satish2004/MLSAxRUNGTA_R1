@@ -8,7 +8,7 @@ const LandingPage = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.7"
-      className="w-full h-screen bg-black pt-1"
+      className="w-full h-screen bg-[#7AC0F8] pt-1"
       id="home"
     >
       <div className="w-full h-full flex flex-col justify-center items-center text-center mt-0">
@@ -58,7 +58,7 @@ const LandingPage = () => {
           <div className="avatar bg-[#008BE2]">
             <a href="https://chat.whatsapp.com/FlBnnFbKaWz8wnGhP9Exye">
               <img
-                src="public/Logo/LevelBeta (1).png"
+                src="/Logo/LevelBeta (1).png"
                 alt="MLSA_LOGO"
                 className="w-16 h-16 "
               />

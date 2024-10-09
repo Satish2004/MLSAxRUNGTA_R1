@@ -168,7 +168,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Md Shahanwaz.jpg"
+              src="/Md Shahanwaz.jpg"
               alt="member1"
               className="w-full h-full object-cover rounded-full"
             />
@@ -272,7 +272,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Ankur kumar.jpg"
+              src="/Ankur kumar.jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -323,7 +323,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/manshi verma.jpg"
+              src="/manshi verma.jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -424,7 +424,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Ishwara Sinha (2).jpg"
+              src="/Ishwara Sinha (2).jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -475,7 +475,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Anand Mohan.jpg"
+              src="/Anand Mohan.jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -526,7 +526,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Bhavya Bhavya Priyadarshani.jpg"
+              src="/Bhavya Bhavya Priyadarshani.jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -626,7 +626,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Umang Kumar bhasin.jpg"
+              src="/Umang Kumar bhasin.jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -663,7 +663,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Niraj Kumar Sharma (1).jpg"
+              src="/Niraj Kumar Sharma (1).jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -714,7 +714,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Raju kumar.png"
+              src="/Raju kumar.png"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -765,7 +765,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Samriddhi Chandak.jpg"
+              src="/Samriddhi Chandak.jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -812,7 +812,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Pranav Raj.jpg"
+              src="/Pranav Raj.jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -863,7 +863,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Avinash Kumar Bareth (2).jpg"
+              src="/Avinash Kumar Bareth (2).jpg"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />
@@ -914,7 +914,7 @@ const TeamCard = () => {
         <div className="rounded-lg shadow-lg overflow-hidden flex flex-col items-center">
           <div className="w-40 h-40">
             <img
-              src="public/Anushriya sahu (1).JPG"
+              src="/Anushriya sahu (1).JPG"
               alt="member3"
               className="w-full h-full object-cover rounded-full"
             />

@@ -9,7 +9,7 @@ const Event = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed=".1"
-      className="w-full h-auto py-20 rounded-tl-3xl rounded-tr-3xl bg-[#24906a]"
+      className="w-full h-auto py-20 rounded-tl-3xl rounded-tr-3xl bg-[#CC6634]"
       id="upcomingevent"
     >
       {/* Text Animation Section */}
