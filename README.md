@@ -51,7 +51,7 @@ Feel free to fork this repository and submit pull requests. Contributions to imp
 
 Fork the repo
 Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
+Commit your changes (git commit -m 'Add some AmazingFeature'
 Push to the branch (git push origin feature/AmazingFeature)
 Open a pull request
 License
